@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1e3a44;
+  color: white;
+}
+
+.menu {
+  width: 30px;
+  cursor: pointer;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: none;
+  animation: transitionIn 1s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header .container {
+  height: 50px;
+}
+
+header label {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+header label span {
+  color: #ff4838;
+}
+
+header {
+  background: #162b32;
+}
+
+section {
+  background: #162b32;
+  margin-top: 1em;
+  padding-top: 1em;
+  height: 105rem;
+}
+
+section .porttext {
+  text-align: center;
+}
+
+.porttext p {
+    color: #f2f2f2;
+    font-weight: 300;
+}
+
+.boxcontainer div {
+  background-color: #1e3a44;
+  width: 100%;
+  height: 150px;
+  margin: 20px 0;
+  display: grid;
+  place-content: center;
+  border-radius: 10px;
+}
+
+.boxcontainer {
+  height: 100vh;
+  background-color: #162b32;
+}
+
+.box1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/enzos.png);
+  background-size: cover;
+}
+
+.box2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/dfarm2.png);
+  background-size: cover;
+}
+
+.box3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/philips.png);
+  background-size: cover;
+}
+
+.box4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/dualshock.png);
+  background-size: cover;
+}
+
+.box5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/portv2.png);
+  background-size: cover;
+}
+
+.box6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/portv3.png);
+  background-size: cover;
+}
+
+.boxcontainer div h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer p {
+  font-weight: 300;
+  color: #f2f2f2;
+}
+
+.aboutm {
+  margin-top: 100vh;
+}
+
+.menu-btn {
+  display: block;
+}
+
+header nav {
+  height: 100vh;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 3em;
+}
+
+header nav ul li {
+  margin-bottom: 2em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 3px 7px;
+}
+
+header nav ul li a:hover {
+  background-color: #264955;
+  border-radius: 10px;
+}
+
+header nav .current {
+  background-color: #264955;
+  border-radius: 10px;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+    animation: unset;
+    margin: unset;
+    height: unset;
+  }
+
+  header nav ul {
+    margin-top: 1.5em;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  #mobile-exit {
+    display: none;
+  }
+
+  header nav ul li a {
+    font-size: 1em;
+    padding: unset;
+    transition: color 0.3s;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul li a:hover {
+    color: #ff4838;
+    background-color: unset;
+    border-radius: unset;
+  }
+
+  header nav ul li .current {
+    background-color: unset;
+    color: #ff4838;
+    border-radius: unset;
+  }
+
+  .boxcontainer div {
+    background-color: #1e3a44;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    background-position: center;
+  }
+
+  .boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    box-sizing: border-box;
+    height: 80vh;
+  }
+
+section {
+    height: 100%;
+    background-color: unset;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+section .container {
+    background-color: #162b32;
+    padding: 1em 2em;
+    height: 100vh;
+}
+}
+
+
+@media only screen and (min-width: 1300px) {
+    section .container {
+        padding-bottom: 1em;
+        height: 100vh;
+    }
+
+    .boxcontainer div {
+        width: 1fr;
+        height: 1fr;
+    }
+}

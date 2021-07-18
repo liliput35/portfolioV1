@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <label class="logo">Lorenz<span>Ciocon</span></label>
+            <img src="../img/menu1.png" alt="menu" class="menu" id="mobile-cta">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                    <li><a href="" id="mobile-exit">Exit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="contactinfo">
+                <h1>Contact Me</h1>
+                <ul>
+                    <li>Facebook: Nicolas Ciocon</li>
+                    <li>Email: lorenzciocon@gmail.com</li>
+                    <li>Phone: 09274224944</li>
+                    <li>Address: Bacolod City, Philippines</li>
+                </ul>
+            </div>
+
+            <form>
+                <h1>Send a Message</h1><div class="formflex">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <textarea name="Message" id="" cols="30" rows="8" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Built and Designed by Lorenz Ciocon</p>
+            <p>Copyright&copy; 2021</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById("mobile-cta");
+        nav = document.querySelector("nav");
+        mobileBtnExit = document.getElementById("mobile-exit");
+        mobileBtn1 = document.querySelector("section");
+  
+        mobileBtn.addEventListener("click", () => {
+          nav.classList.add("menu-btn");
+          mobileBtn1.classList.add("aboutm");
+        });
+  
+        mobileBtnExit.addEventListener("click", () => {
+          nav.classList.remove("menu-btn");
+          mobileBtn1.classList.remove("aboutm");
+        });
+      </script>
+</body>
+</html>
